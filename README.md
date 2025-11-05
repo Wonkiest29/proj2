@@ -365,43 +365,6 @@ spring.jpa.hibernate.ddl-auto=update
 .\gradlew.bat bootRun --args='--spring.profiles.active=dev'
 ```
 
-## 🐛 Troubleshooting
-
-### Problem: Application doesn't start in IntelliJ IDEA
-
-**Solution:**
-1. Click **"Reload All Gradle Projects"** in the Gradle panel
-2. File → Invalidate Caches / Restart
-3. Make sure JDK 21 is being used
-
-### Problem: Error "ClassNotFoundException: JpaRepository"
-
-**Solution:**
-```cmd
-.\gradlew.bat --stop
-.\gradlew.bat clean build
-```
-Then restart the application.
-
-### Problem: Swagger UI shows 404
-
-**Solution:**
-Make sure the application is running and open:
-http://localhost:8080/swagger-ui/index.html
-
-### Problem: Port 8080 is already in use
-
-**Solution:**
-Run on a different port:
-```cmd
-.\gradlew.bat bootRun --args='--server.port=8081'
-```
-
-## 📧 Contact
-
-**Author:** CoffeeDev  
-**Project:** Task 2 — Spring Boot REST API "Product Management"
-
 ## 📄 License
 
 This project was created for educational purposes.
